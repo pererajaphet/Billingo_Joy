@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Quizz-Billingo & Joy </title>
+    <style>
+        .action-button {
+                background-color: #3439db;
+                color: white;
+                text-decoration: none;
+                padding: 10px 40px;
+                border-radius: 10px;
+                font-family: 'Pacifico', cursive;
+                border-bottom: 5px solid #3439db;
+                text-shadow: 0px -2px #3439db;
+                transition: all .1s;
+                -webkit-transition: all .1s;
+                float: center;
+            }
+            .action-button:active {
+                transform: translate(0,5px);
+                -webkit-transform: translate(0,5px);
+                border: 1px solid;
+            }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+    <div class="start_btn"><button>Commence le Quizz</button></div>
+    <h1><a  href = 'reading.html' class = "action-button"><strong>Quit</strong></a></h1><br/>
+    <div class="info_box">
+        <div class="info-title"><span>Les régles du Quizz</span></div>
+        <div class="info-list">
+            <div class="info">1. Vous aurez seulement  <span>15 secondes</span> pour chaque questions.</div>
+            <div class="info">2. Une fois que vous avez choisi votre réponse, vous ne pouvez plus l'annuler.</div>
+            <div class="info">3. Vous ne pouvez sélectionner aucune option une fois le temps écoulé.</div>
+            <div class="info">4. Vous ne pouvez pas quitter le Quiz pendant que vous jouez.</div>
+            <div class="info">5. Vous obtiendrez des points sur la base de vos réponses correctes.</div>
+        </div>
+        <div class="buttons">
+            <button class="quit"> Quit Quizz</button>
+            <button class="restart">Continue</button>
+        </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+        <header>
+            <div class="title"> Repondre aux Quizz </div>
+            <div class="timer">
+                <div class="time_left_txt">Temps restant</div>
+                <div class="timer_sec">15</div>
+            </div>
+            <div class="time_line"></div>
+        </header>
+        <section>
+            <div class="que_text">
+                <!-- Here I've inserted question from JavaScript -->
+            </div>
+            <div class="option_list">
+                <!-- Here I've inserted options from JavaScript -->
+            </div>
+        </section>
+
+        <!-- footer of Quiz Box -->
+        <footer>
+            <div class="total_que">
+                <!-- Here I've inserted Question Count Number from JavaScript -->
+            </div>
+            <button class="next_btn">Question suivante</button>
+        </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+        <div class="icon">
+            <i class="fas fa-crown"></i>
+        </div>
+        <div class="complete_text"> Tu as completé le quizz, super !</div>
+        <div class="score_text">
+            <!-- Here I've inserted Score Result from JavaScript -->
+        </div>
+        <div class="buttons">
+            <button class="restart">Rejouez aux Quizz</button>
+            <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js3/questions3.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js3/script3.js"></script>
+
+</body>
+</html>

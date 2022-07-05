@@ -1,0 +1,88 @@
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Beginner level </title>
+        <style>
+            @import
+            url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+            h1, h3, p{
+                text-align: center;
+                color: white;
+            }
+            h2{
+                text-align: center;
+                color: black;
+            }
+            div {
+                width: 500px;
+                height: 300px;
+                margin: 3px;
+                display: inline-block;
+            }
+            section {
+                text-align: center;
+            }
+            body
+            {
+                background-image: url('./5852.jpg');
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: cover;
+                align-items: center;
+                width:90%;
+                margin:auto;
+                min-width:600px;
+                max-width:2000px
+            }
+            .square {
+                height: 300px;
+                width: 500px;
+                border: 5px solid blue;
+                border-image: linear-gradient(355deg, #f7ff60, #db36a4, #f7ff60);
+                border-image-slice: 1;
+                align-items: center;
+                background-color: #262626
+            }
+            .action-button {
+                background-color: #3439db;
+                color: white;
+                text-decoration: none;
+                padding: 10px 40px;
+                border-radius: 10px;
+                font-family: 'Pacifico', cursive;
+                border-bottom: 5px solid #3439db;
+                text-shadow: 0px -2px #3439db;
+                transition: all .1s;
+                -webkit-transition: all .1s;
+                float: center;
+            }
+            .action-button:active {
+                transform: translate(0,5px);
+                -webkit-transform: translate(0,5px);
+                border: 1px solid;
+            }
+        </style>
+    </head>
+    <body>
+        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+        <h2>Bienvenu dans la session d'entrainement.</h2>
+        <h2>Welcome to the Training session.</h2>
+        <section>
+            <div class="square">
+                <h1>Le niveau débutant, propose <br/> des jeux et des Quiz qui t'aideront à t'améliorer.</h1>
+                <h1>The beginer level, propose games and <br/>quizzes that help you to progress.</h1><br/><br/>
+                <h1><a  href = 'beginer.html' class = "action-button"><strong>Niveau 1: débutant</strong></a></h1>
+            </div>
+            <div class="square">
+                <h1>Le niveau débutant, propose <br/> des jeux et des Quiz qui t'aideront à t'améliorer.</h1>
+                <h1>The beginer level, propose games and <br/>quizzes that help you to progress.</h1><br/><br/>
+                <h1><a  href = # class = "action-button"><strong>Niveau 2: intermédiaire </strong></a></h1>
+            </div>
+            <div class="square">
+                <h1>Le niveau avancé, propose <br/> des jeux et des Quiz qui t'aideront à t'améliorer..</h1>
+                <h1>The advanced level, propose games and quizzes <br/> that help you to progress.<br/><br/>
+                <h1><a  href = 'avanced.html' class = "action-button"><strong>Niveau 3 : avancé </strong></a></h1>
+            </div>
+        </section>
+    </body>
+</html>
