@@ -23,5 +23,8 @@ Enter following URL in Your Browser
 http://127.0.0.1:8000/
 
 
-For Run training part, open trainning.html file in your Browser
+For Run training part, 
+
+open ./Quizz_/trainning.html file in your Browser
+
 Because for yhe moment i didn't put it in the server. I am doing this.
